@@ -1,0 +1,13 @@
+from sqlalchemy import create_engine
+from sqlalchemy.orm import sessionmaker
+from sqlalchemy.ext.declarative import declarative_base
+
+#Cuando migremos a postgres, cambiaremos la URL de conexión a algo como:
+#SQLALCHEMY_DATABASE_URL = "postgresql://user:password@postgresserver/db
+SQLALCHEMY_DATABASE_URL = "sqlite:///./sql_app.db"
+
+# Creación del motor y la sesión
+engine = create_engine(SQLALCHEMY_DATABASE_URL)
+SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
+
+Base = declarative_base()
