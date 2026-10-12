@@ -1,3 +1,7 @@
+#aqui en los endpoints son las salidas que vamos a tener en el frontend, es decir, lo que vamos a mostrar en el frontend
+#con ello podemos hacer que el frontend tenga la informacion que nosotros queramos, es decir, podemos 
+# hacer que el frontend tenga la informacion de la base de datos, pero no toda la informacion, 
+# sino solo la informacion que nosotros queramos mostrar en el frontend
 from fastapi import APIRouter, HTTPException, Depends
 from pydantic import BaseModel
 from typing import List
