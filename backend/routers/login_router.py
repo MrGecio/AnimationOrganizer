@@ -7,7 +7,7 @@ from pydantic import BaseModel
 from typing import List
 
 from model.user import User
-from model.roles import Role
+from backend.model.rol import Role
 
 from sqlalchemy.orm import Session
 from database.database import SessionLocal, engine

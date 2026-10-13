@@ -1,0 +1,1 @@
+#aqui van los endpoints de los repositorios donde se guardan los assets de los poryectos y asi
