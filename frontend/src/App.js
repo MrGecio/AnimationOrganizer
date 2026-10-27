@@ -6,7 +6,6 @@ import Login from './pages/Login/Login.jsx';
 function App() {
   return (
 
-    //Vamos a agregar las rutas Para el uso de los routers desde APP
     <div className="App">
 
 

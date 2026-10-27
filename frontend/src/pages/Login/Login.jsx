@@ -11,8 +11,8 @@ const Login = () => {
   };
 
   return (
-    <div className="Login"> {/* Agregada la clase Login */}
-      <header className="Login-Header"> {/* Agregada la clase Login-Header */}
+    <div className="Login"> 
+      <header className="Login-Header"> 
         <form onSubmit={handleLogin} className="Login-Form"> 
           <p className="Login-Title">ANIDEP</p> 
           
