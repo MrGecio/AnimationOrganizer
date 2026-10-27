@@ -35,7 +35,7 @@ app.add_middleware(
 )
 
 #Invocaione de los Routers
-# app.include_router(type_router)
+app.include_router(login_router)
 
 
 

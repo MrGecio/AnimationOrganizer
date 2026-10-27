@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Hairline&display=swap');
+
+@font-palette-values --bungee-hairline-regular {
+
+font-family: "Bungee Hairline", sans-serif;
+
+font-weight: 400;
+
+font-style: normal;
+
+}
+
+.Login{
+
+text-align: center;
+
+background: #ffffff;
+
+}
+
+.Login-Logo{
+
+height: 10vmin;
+
+pointer-events: none;
+
+}
+
+.Login-Form {
+
+background: #ffffff;
+
+padding: 30px 40px;
+
+border-radius: 8px;
+
+box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+
+display: flex;
+
+flex-direction: column;
+
+width: 100%;
+
+max-width: 360px;
+
+}
+
+.Login-Form div {
+
+display: flex;
+
+flex-direction: column;
+
+margin-bottom: 20px;
+
+}
+
+.Login-Form label {
+
+font-size: 14px;
+
+font-weight: bold;
+
+color: #333333;
+
+margin-bottom: 6px;
+
+text-align: left;
+
+}
+
+.Login-Form input {
+
+padding: 10px 12px;
+
+border: 1px solid #ccc;
+
+border-radius: 4px;
+
+font-size: 14px;
+
+outline: none;
+
+transition: border-color 0.2s;
+
+}
+
+.Login-Form input:focus {
+
+border-color: #393341;
+
+}
+
+.Login-Form button {
+
+background-color: #b878c5;
+
+color: white;
+
+border: none;
+
+padding: 12px;
+
+border-radius: 4px;
+
+font-size: 16px;
+
+font-weight: bold;
+
+cursor: pointer;
+
+transition: background-color 0.2s;
+
+margin-top: 10px;
+
+}
+
+.Login-Form button:hover {
+
+background-color: #48070d;
+
+}
+
+@media (prefers-reduced-motion: no-preference) {
+
+.Login-Logo{
+
+animation: Login-logo-spin infinite 20s linear;
+
+}
+
+}
+
+.Login-Header{
+
+background-color: #7f6581a2;
+
+min-height: 100vh;
+
+display: flex;
+
+flex-direction: column;
+
+align-items: center;
+
+justify-content: center;
+
+font-size: calc(10px + 2vmin);
+
+font-style: normal;
+
+font-weight: 1000;
+
+font-family:"Bungee Hairline",sans-serif;
+
+color: #aa47b8;
+
+}
+
+.Login-Title{
+
+display: flex;
+
+justify-content: center;
+
+align-items: center;
+
+width: 100%;
+
+}
+
+@keyframes Login-logo-spin {
+
+from {
+
+transform: rotate(0deg);
+
+}
+
+to {
+
+transform: rotate(360deg);
+
+}
+
+}
