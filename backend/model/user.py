@@ -1,4 +1,4 @@
-from sqlalchemy import Column, Integer, String, Date, ForeignKey
+from sqlalchemy import Column, Integer, String, Date, ForeignKey,Boolean
 from database.database import Base # Importas la Base que creaste
 from sqlalchemy.orm import relationship
 from datetime import datetime
@@ -15,6 +15,7 @@ class User(Base):
     user_status = Column(String)  
     user_created_at = Column(Date) 
     user_updated_at = Column(Date)  
+    is_active = Column(Boolean, default=True)
     
  
     
@@ -23,3 +24,4 @@ class User(Base):
     
     #Relationships
     role = relationship("Role", back_populates="users")
+    group_tasks = relationship("GroupTasks", back_populates="user")
